@@ -33,14 +33,16 @@ nav li {
     margin: 0 0.2rem;
 }
 
-nav a {
+nav a { 
     text-decoration: none;
     color: #8F87F1;
     background: #FED2E2;
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-weight: bold;
+    font-size: 1.2rem; /* <-- Add or increase this line */
     transition: background 0.2s, color 0.2s;
+
 }
 
 nav a.active,
