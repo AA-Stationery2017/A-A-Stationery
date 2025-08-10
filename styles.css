@@ -33,16 +33,17 @@ nav li {
     margin: 0 0.2rem;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;  /* Increase gap to prevent overlap */
+nav a {
+    text-decoration: none;
+    color: #8F87F1;
+    background: #FED2E2;
+    padding: 0.4rem 0.8rem;  /* Optional: slightly reduced padding */
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.95rem;      /* Decrease font size */
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;   /* Ensures each link is treated as a block */
 }
-
 nav a.active,
 nav a:hover {
     background: #E9A5F1;
