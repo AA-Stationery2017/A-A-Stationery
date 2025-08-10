@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #8F87F1 0%, #C68EFD 40%, #E9A5F1 80%, #FED2E2 100%);
+    color: #2D0E3B;
+}
+
+header {
+    background: #8F87F1;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px #c68efd55;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav li {
+    margin: 0 0.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8F87F1;
+    background: #FED2E2;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a.active,
+nav a:hover {
+    background: #E9A5F1;
+    color: #fff;
+}
+
+main {
+    padding: 2rem 1rem;
+    min-height: 60vh;
+}
+
+.intro {
+    text-align: center;
+    background: #E9A5F144;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px #8F87F133;
+}
+
+.items h2 {
+    text-align: center;
+    color: #8F87F1;
+    margin-bottom: 1.2rem;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.item-card {
+    background: #fff;
+    border: 2px solid #C68EFD;
+    border-radius: 20px;
+    width: 220px;
+    box-shadow: 0 2px 12px #E9A5F133;
+    text-align: center;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.item-card:hover {
+    transform: scale(1.05);
+    border-color: #8F87F1;
+}
+
+.item-card img {
+    width: 90%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 0.8rem;
+    border: 1px solid #C68EFD44;
+    background: #FED2E2;
+}
+
+.item-card h3 {
+    margin: 0.5rem 0 0.2rem 0;
+    color: #C68EFD;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.item-card p {
+    color: #8F87F1;
+    font-size: 1rem;
+}
+
+.quantity-select {
+    margin-top: 0.7rem;
+    text-align: center;
+}
+
+.quantity-select label {
+    margin-right: 0.5em;
+    font-size: 0.93em;
+}
+
+.quantity-select input[type="number"] {
+    width: 50px;
+    border: 1px solid #C68EFD;
+    border-radius: 8px;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+    color: #8F87F1;
+    background: #FED2E2;
+}
+
+footer {
+    background: #8F87F1;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
