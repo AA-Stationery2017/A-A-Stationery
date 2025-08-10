@@ -25,31 +25,46 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;  /* Increase gap to prevent overlap */
+    gap: 1.5rem; /* Increased gap to prevent overlap */
 }
 
-
 nav li {
-    margin: 0 0.2rem;
+    margin: 0; /* Remove margin, use gap from nav ul */
 }
 
 nav a {
     text-decoration: none;
     color: #8F87F1;
     background: #FED2E2;
-    padding: 0.4rem 0.8rem;  /* Optional: slightly reduced padding */
+    padding: 0.45rem 1.2rem; /* More horizontal padding for better touch targets */
     border-radius: 25px;
     font-weight: bold;
-    font-size: 0.95rem;      /* Decrease font size */
+    font-size: 0.95rem;
     transition: background 0.2s, color 0.2s;
-    display: inline-block;   /* Ensures each link is treated as a block */
+    display: inline-block;
+    min-width: 110px; /* Prevents the boxes from shrinking too small */
+    text-align: center;
+    box-sizing: border-box;
 }
+
 nav a.active,
 nav a:hover {
     background: #E9A5F1;
     color: #fff;
 }
 
+/* Responsive: make nav stack at small screens */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.7rem;
+        align-items: center;
+    }
+    nav a {
+        min-width: 140px;
+        font-size: 1.05rem;
+    }
+}
 main {
     padding: 2rem 1rem;
     min-height: 60vh;
