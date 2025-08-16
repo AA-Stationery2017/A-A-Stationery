@@ -30,7 +30,7 @@ giftsList.addEventListener('click', function(e) {
             name: item.name,
             image: item.image,
             price: Number(item.price),
-            qty: qty
+            quantity: quantity 
         });
         alert(`${item.name} added to cart!`);
     }
