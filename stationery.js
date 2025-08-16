@@ -31,21 +31,9 @@ stationeryList.addEventListener('click', function(e) {
         addToCart({
             name: item.name,
             image: item.image,
-            price: item.price,
+            price: Number(item.price),
             qty: qty
         });
         alert(`${item.name} added to cart!`);
     }
 });
-
-// Cart logic (shared, or put in cart.js and import on every page)
-function addToCart(item) {
-    let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-    const existing = cart.find(i => i.name === item.name);
-    if (existing) {
-        existing.qty += item.qty;
-    } else {
-        cart.push(item);
-    }
-    localStorage.setItem('cart', JSON.stringify(cart));
-}
