@@ -1,10 +1,26 @@
 const artCraftItems = [
-    { name: "Crayons", image: "crayons.jpg", price: "30" },
-    { name: "Color Pencils", image: "color-pencils.jpg", price: "40" },
-    { name: "Watercolors", image: "watercolors.jpg", price: "60" },
-    { name: "Craft Paper", image: "craft-paper.jpg", price: "20" },
-    { name: "Glue Stick", image: "glue-stick.jpg", price: "15" },
-    { name: "Brush Set", image: "brush-set.jpg", price: "50" }
+    { name: "Crayons",
+     image: "crayons.jpg",
+     price: "30"
+    },
+    
+    { name: "Color Pencils", 
+     image: "color-pencils.jpg", 
+     price: "40"
+    },
+    { name: "Watercolors", 
+     image: "watercolors.jpg",
+     price: "60"
+    },
+    { name: "Craft Paper", 
+     image: "craft-paper.jpg", 
+     price: "20"
+    },
+    { name: "Glue Stick",
+     image: "glue-stick.jpg",
+     price: "15"
+    }
+    
 ];
 
 const artCraftList = document.getElementById('artCraftList');
