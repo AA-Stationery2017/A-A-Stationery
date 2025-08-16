@@ -19,6 +19,33 @@ stationeryItems.forEach((item, idx) => {
             <label>Qty:</label>
             <input type="number" min="1" value="1" name="stationery-qty-${idx}">
         </div>
+        <button class="add-to-cart" data-idx="${idx}">Add to Cart</button>
     `;
     stationeryList.appendChild(card);
 });
+stationeryList.addEventListener('click', function(e) {
+    if (e.target.classList.contains('add-to-cart')) {
+        const idx = e.target.getAttribute('data-idx');
+        const qty = parseInt(document.getElementById(`stationery-qty-${idx}`).value, 10);
+        const item = stationeryItems[idx];
+        addToCart({
+            name: item.name,
+            image: item.image,
+            price: item.price,
+            qty: qty
+        });
+        alert(`${item.name} added to cart!`);
+    }
+});
+
+// Cart logic (shared, or put in cart.js and import on every page)
+function addToCart(item) {
+    let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    const existing = cart.find(i => i.name === item.name);
+    if (existing) {
+        existing.qty += item.qty;
+    } else {
+        cart.push(item);
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
