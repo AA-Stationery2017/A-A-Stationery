@@ -4,11 +4,13 @@ function renderCart() {
     const cartTotal = document.getElementById('cartTotal');
     cartList.innerHTML = '';
     let total = 0;
+
     if (cart.length === 0) {
         cartList.innerHTML = '<p>Your cart is empty.</p>';
         cartTotal.innerHTML = '';
         return;
     }
+
     cart.forEach((item, idx) => {
         const amount = item.qty * item.price;
         total += amount;
@@ -24,6 +26,7 @@ function renderCart() {
         `;
         cartList.appendChild(div);
     });
+
     cartTotal.innerHTML = `<strong>Total: &#8377;${total}</strong>`;
 }
 
