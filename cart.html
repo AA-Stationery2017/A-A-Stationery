@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | Colorful Stationery Store</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .cart-item { display: flex; align-items: center; gap: 18px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 8px;}
-        .cart-name { flex:1; min-width:100px;}
-        .cart-item input[type="number"] { width: 40px; }
-        .remove-cart-item { background: #E9A5F1; color: #fff; border: none; border-radius: 8px; padding: 5px 14px; cursor: pointer;}
-        .remove-cart-item:hover { background: #8F87F1;}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Stationery Store</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Your Cart</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Introduction</a></li>
-                <li><a href="stationery.html">Stationery</a></li>
-                <li><a href="gifts.html">Gifts</a></li>
-                <li><a href="toys.html">Toys</a></li>
-                <li><a href="print.html">Print</a></li>
-                <li><a href="art-craft.html">Art & Craft</a></li>
-                <li><a href="cart.html" class="active">Cart</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Cart Items</h2>
-        <div id="cartList"></div>
-        <div id="cartTotal" style="margin-top:2em;font-size:1.2em"></div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Colorful Stationery Store. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>Your Cart</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="stationery.html">Stationery</a></li>
+        <li><a href="gifts.html">Gifts</a></li>
+        <li><a href="toys.html">Toys</a></li>
+        <li><a href="print.html">Print</a></li>
+        <li><a href="art-craft.html">Art & Craft</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- JavaScript file link -->
-    <script src="cart.js"></script>
+  <main>
+    <h2>Cart Items</h2>
+    <div id="cartList"></div>
+    <div id="cartTotal" style="margin-top:2em;font-size:1.2em"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AA-Stationery Store. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript file link -->
+  <script src="cart.js"></script>
 </body>
 </html>
